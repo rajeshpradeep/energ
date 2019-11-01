@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_screen"
+    android:layout_marginStart="@dimen/common_margin_20"
+    android:layout_marginEnd="@dimen/common_margin_20"
+    tools:context=".ui.product.fragment.ContactUsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_margin_20"
+        android:layout_marginBottom="@dimen/common_margin_20"
+        android:paddingTop="@dimen/common_margin_20"
+        android:paddingBottom="@dimen/common_margin_20"
+        android:paddingStart="@dimen/common_margin_10"
+        android:paddingEnd="@dimen/common_margin_10"
+        android:background="@drawable/bg_white"
+        android:id="@+id/contact_us_llay"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/contact_info_lbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:text="@string/Contact_information"
+            android:textColor="@color/hint_color"
+            android:textSize="@dimen/text_18"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:paddingStart="@dimen/common_margin_10"
+            android:paddingEnd="@dimen/common_margin_10"
+            android:paddingTop="@dimen/common_margin_5"
+            android:paddingBottom="@dimen/common_margin_5"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_lbl"
+            android:text="@string/name"
+            android:textAlignment="textStart"
+            android:textColor="@color/hint_color"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textSize="@dimen/text_14"
+            android:layout_gravity="start"
+            android:paddingStart="@dimen/common_margin_10"
+            android:paddingEnd="@dimen/common_margin_10"
+            android:paddingTop="@dimen/common_margin_5"
+            android:paddingBottom="@dimen/common_margin_5"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_val"
+            android:text="@string/name"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorPrimary"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle"
+            android:textSize="@dimen/text_14"
+            android:layout_gravity="start"
+            android:paddingStart="@dimen/common_margin_10"
+            android:paddingEnd="@dimen/common_margin_10"
+            android:paddingTop="@dimen/common_margin_5"
+            android:paddingBottom="@dimen/common_margin_5"/>
+
+        <View
+            style="@style/view_theme"
+            android:layout_marginStart="@dimen/common_margin_10"
+            android:layout_marginEnd="@dimen/common_margin_10"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addr_lbl"
+            android:text="@string/address"
+            android:textAlignment="textStart"
+            android:textColor="@color/hint_color"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textSize="@dimen/text_14"
+            android:layout_gravity="start"
+            android:paddingStart="@dimen/common_margin_10"
+            android:paddingEnd="@dimen/common_margin_10"
+            android:paddingTop="@dimen/common_margin_5"
+            android:paddingBottom="@dimen/common_margin_5"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addr_val"
+            android:text="@string/address"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorPrimary"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle"
+            android:textSize="@dimen/text_14"
+            android:layout_gravity="start"
+            android:paddingStart="@dimen/common_margin_10"
+            android:paddingEnd="@dimen/common_margin_10"
+            android:paddingTop="@dimen/common_margin_5"
+            android:paddingBottom="@dimen/common_margin_5"/>
+
+        <View
+            style="@style/view_theme"
+            android:layout_marginStart="@dimen/common_margin_10"
+            android:layout_marginEnd="@dimen/common_margin_10"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mobile_lbl"
+            android:text="@string/mobile"
+            android:textAlignment="textStart"
+            android:textColor="@color/hint_color"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textSize="@dimen/text_14"
+            android:layout_gravity="start"
+            android:paddingStart="@dimen/common_margin_10"
+            android:paddingEnd="@dimen/common_margin_10"
+            android:paddingTop="@dimen/common_margin_5"
+            android:paddingBottom="@dimen/common_margin_5"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mobile_val"
+            android:text="@string/mobile"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorPrimary"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle"
+            android:textSize="@dimen/text_14"
+            android:layout_gravity="start"
+            android:paddingStart="@dimen/common_margin_10"
+            android:paddingEnd="@dimen/common_margin_10"
+            android:paddingTop="@dimen/common_margin_5"
+            android:paddingBottom="@dimen/common_margin_5"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

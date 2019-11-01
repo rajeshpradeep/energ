@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_screen"
+    android:orientation="vertical"
+    tools:context=".ui.product.fragment.ProductDescriptionFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/viewpager_llay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp" />
+
+                <LinearLayout
+                    android:id="@+id/sliderDots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/common_margin_10"
+                    android:paddingBottom="@dimen/common_margin_10"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/product_detail_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white"
+                android:layout_marginStart="@dimen/common_margin_10"
+                android:layout_marginEnd="@dimen/common_margin_10"
+                android:paddingTop="@dimen/common_margin_20"
+                android:paddingBottom="@dimen/common_margin_20"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/product_name_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/product_name_lbl"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_weight=".3"
+                        android:paddingStart="@dimen/common_margin_10"
+                        android:paddingTop="@dimen/common_margin_5"
+                        android:paddingEnd="@dimen/common_margin_10"
+                        android:paddingBottom="@dimen/common_margin_5"
+                        android:text="@string/product_name"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/hint_color"
+                        android:textSize="@dimen/text_14" />
+
+                    <TextView
+                        android:id="@+id/product_name_val"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_weight=".7"
+                        android:paddingStart="@dimen/common_margin_10"
+                        android:paddingTop="@dimen/common_margin_5"
+                        android:paddingEnd="@dimen/common_margin_10"
+                        android:paddingBottom="@dimen/common_margin_5"
+                        android:text="@string/product_name"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_14" />
+                </LinearLayout>
+
+                <View
+                    style="@style/view_theme"
+                    android:layout_marginStart="@dimen/common_margin_10"
+                    android:layout_marginEnd="@dimen/common_margin_10" />
+
+                <LinearLayout
+                    android:id="@+id/product_desc_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/product_desc_lbl"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_weight=".3"
+                        android:paddingStart="@dimen/common_margin_10"
+                        android:paddingTop="@dimen/common_margin_5"
+                        android:paddingEnd="@dimen/common_margin_10"
+                        android:paddingBottom="@dimen/common_margin_5"
+                        android:text="@string/productDescription"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/hint_color"
+                        android:textSize="@dimen/text_14" />
+
+                    <TextView
+                        android:id="@+id/product_desc_val"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_weight=".7"
+                        android:paddingStart="@dimen/common_margin_10"
+                        android:paddingTop="@dimen/common_margin_5"
+                        android:paddingEnd="@dimen/common_margin_10"
+                        android:paddingBottom="@dimen/common_margin_5"
+                        android:text="@string/productDescription"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_14" />
+                </LinearLayout>
+
+                <View
+                    style="@style/view_theme"
+                    android:layout_marginStart="@dimen/common_margin_10"
+                    android:layout_marginEnd="@dimen/common_margin_10" />
+
+                <LinearLayout
+                    android:id="@+id/product_dosage_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/product_dosage_lbl"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_weight=".3"
+                        android:paddingStart="@dimen/common_margin_10"
+                        android:paddingTop="@dimen/common_margin_5"
+                        android:paddingEnd="@dimen/common_margin_10"
+                        android:paddingBottom="@dimen/common_margin_5"
+                        android:text="@string/productDosage"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/hint_color"
+                        android:textSize="@dimen/text_14" />
+
+                    <TextView
+                        android:id="@+id/product_dosage_val"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_weight=".7"
+                        android:paddingStart="@dimen/common_margin_10"
+                        android:paddingTop="@dimen/common_margin_5"
+                        android:paddingEnd="@dimen/common_margin_10"
+                        android:paddingBottom="@dimen/common_margin_5"
+                        android:text="@string/productDosage"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_14" />
+                </LinearLayout>
+
+                <View
+                    style="@style/view_theme"
+                    android:layout_marginStart="@dimen/common_margin_10"
+                    android:layout_marginEnd="@dimen/common_margin_10" />
+
+                <LinearLayout
+                    android:id="@+id/product_rc_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/product_rc_lbl"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_weight=".3"
+                        android:paddingStart="@dimen/common_margin_10"
+                        android:paddingTop="@dimen/common_margin_5"
+                        android:paddingEnd="@dimen/common_margin_10"
+                        android:paddingBottom="@dimen/common_margin_5"
+                        android:text="@string/productRecommendedCrops"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/hint_color"
+                        android:textSize="@dimen/text_14" />
+
+                    <TextView
+                        android:id="@+id/product_rc_val"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_weight=".7"
+                        android:paddingStart="@dimen/common_margin_10"
+                        android:paddingTop="@dimen/common_margin_5"
+                        android:paddingEnd="@dimen/common_margin_10"
+                        android:paddingBottom="@dimen/common_margin_5"
+                        android:text="@string/productDosage"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_14" />
+                </LinearLayout>
+
+                <View
+                    style="@style/view_theme"
+                    android:layout_marginStart="@dimen/common_margin_10"
+                    android:layout_marginEnd="@dimen/common_margin_10" />
+
+                <LinearLayout
+                    android:id="@+id/product_comp_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/product_comp_lbl"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_weight=".3"
+                        android:paddingStart="@dimen/common_margin_10"
+                        android:paddingTop="@dimen/common_margin_5"
+                        android:paddingEnd="@dimen/common_margin_10"
+                        android:paddingBottom="@dimen/common_margin_5"
+                        android:text="@string/productCompositions"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/hint_color"
+                        android:textSize="@dimen/text_14" />
+
+                    <TextView
+                        android:id="@+id/product_comp_val"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_weight=".7"
+                        android:paddingStart="@dimen/common_margin_10"
+                        android:paddingTop="@dimen/common_margin_5"
+                        android:paddingEnd="@dimen/common_margin_10"
+                        android:paddingBottom="@dimen/common_margin_5"
+                        android:text="@string/productCompositions"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_14" />
+                </LinearLayout>
+
+                <View
+                    style="@style/view_theme"
+                    android:layout_marginStart="@dimen/common_margin_10"
+                    android:layout_marginEnd="@dimen/common_margin_10" />
+
+                <LinearLayout
+                    android:id="@+id/product_mrp_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/product_mrp_lbl"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_weight=".3"
+                        android:paddingStart="@dimen/common_margin_10"
+                        android:paddingTop="@dimen/common_margin_5"
+                        android:paddingEnd="@dimen/common_margin_10"
+                        android:paddingBottom="@dimen/common_margin_5"
+                        android:text="@string/productMRP"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/hint_color"
+                        android:textSize="@dimen/text_14" />
+
+                    <TextView
+                        android:id="@+id/product_mrp_val"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_weight=".7"
+                        android:paddingStart="@dimen/common_margin_10"
+                        android:paddingTop="@dimen/common_margin_5"
+                        android:paddingEnd="@dimen/common_margin_10"
+                        android:paddingBottom="@dimen/common_margin_5"
+                        android:text="@string/productMRP"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_14" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/contact_us_btn"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/common_margin_20"
+                    android:background="@drawable/btn_bg_colorprimary"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:paddingStart="@dimen/common_margin_40"
+                    android:paddingEnd="@dimen/common_margin_40"
+                    android:layout_marginBottom="@dimen/common_margin_20"
+                    android:text="@string/contact_us"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_16" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Ener-G</string>
+    <string name="slogan">Time for a sharp securing plants</string>
+    <string name="img_desc">image_description</string>
+    <string name="login_lbl">Login</string>
+    <string name="create_acc">Create Account</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="userName">UserName</string>
+    <string name="emailid">Email</string>
+    <string name="mobile">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="cpassword">Confirm Password</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="cancel">Cancel</string>
+    <string name="okay">OK</string>
+    <string name="alert">Alert</string>
+    <string name="product_lbl">Product:</string>
+    <string name="profile">Profile</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="Contact_information">Contact Us</string>
+    <string name="product_name">Product Name</string>
+    <string name="productDescription">Description</string>
+    <string name="productDosage">Dosage</string>
+    <string name="productRecommendedCrops">Recommended Crops</string>
+    <string name="productCompositions">Compositions</string>
+    <string name="productMRP">MRP Rs.</string>
+    <string name="products">Products</string>
+    <string name="logout">Logout</string>
+
+</resources>
